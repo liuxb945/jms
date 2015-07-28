@@ -39,7 +39,7 @@ public class JmsSender {
              * Topic topic = session.createTopic("xkey.Topic"); 
              * producer = session.createProducer(topic); 
             */  
-            producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);  
+            producer.setDeliveryMode(DeliveryMode.PERSISTENT);  
             sendMessage(session,producer);  
             session.commit();  
               
